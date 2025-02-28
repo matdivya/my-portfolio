@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0073e6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0073e6;
+}
+
+.profile-pic {
+    width: 150px;  /* Adjust size */
+    height: 150px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover;
+    border: 3px solid #0073e6;
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0073e6;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 30px;
+    color: #0073e6;
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf4ff;
+}
+
+.home-content h1 {
+    font-size: 40px;
+}
+
+.home-content span {
+    color: #0073e6;
+}
+
+/* Projects */
+
+/* Project Hover Effect */
+.project {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Highlight on Hover */
+.project:hover {
+    transform: scale(1.03); /* Slightly enlarges the project */
+    box-shadow: 0 8px 16px rgba(0, 115, 230, 0.3); /* Adds a glowing effect */
+    background: #eaf4ff; /* Light blue background on hover */
+}
+
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+/* Skills Section */
+/* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+/* Skills Container - Aligns Circles Center */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Skill Circles */
+.skill-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.skill-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Skill Name */
+.skill-circle h3 {
+    font-size: 18px;
+    color: #0073e6;
+    margin-bottom: 5px;
+}
+
+/* Skill Description */
+.skill-circle p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Different Colors for Non-Tech Skills */
+.skill-circle.non-tech {
+    border: 3px solid green; /* Orange border */
+}
+
+.skill-circle:not(.non-tech) {
+    border: 3px solid #0073e6; /* Blue border for tech skills */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Responsive */
+/*@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-box {
+        width: 80%;
+    }
+}
